@@ -1,0 +1,107 @@
+body{
+  display: flex;
+  justify-content: center;
+  background: rgb(161, 228, 228);
+  height: 100%;
+  
+}
+.App {
+
+}
+
+
+.Header {
+  
+  height: 122px;
+  width: 100vw;
+  color: white;
+  background: white;
+  position: sticky;
+ 
+  top: 0px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  background-image: url('./img/SIRSLogo.png'), url('./img/sirs-head.png');
+  z-index: 1;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  
+
+
+}
+.header-h3{
+  text-align: right;
+  font-weight: 100;
+  font-size: 2vw;
+  height: 20%;
+  margin: 0 60px 15px 0;
+}
+.header-right{
+  float: right;
+  
+  
+  text-shadow: 0 0 0.2em #FFFFFF;
+  color: #193495;
+  margin: auto 0;
+  font-weight: 100;
+  font-size: 3vw;
+  
+}
+.nav{
+  top: 122px;
+  display: flex;
+  position: sticky;
+  justify-content: space-around;
+  bottom: 0px;
+  height: 20px;
+  width: 100%;
+  background: silver;
+  box-shadow: 1px 10px 15px #888888;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  color: #73b019; /*sirs blue: #193495, sirs green: #73b019*/
+}
+.navLink{
+  color: #193495;
+  text-decoration: none;
+}
+.navLink:active{
+ color: #73b019;
+}
+.MidContainer{
+  height:150vh;
+  width: 80vw;
+  border: solid 3px gray;
+  box-shadow: 10px 10px 5px #888888;
+  padding: 20px;
+  background: white;
+  
+  
+}
+.main-left{
+  float: left;
+  height: 150vh;
+  width: 40%;
+  overflow-y: hidden;
+  padding: 20px;
+  border: solid 2px red;
+}
+
+.Home{
+  position: relative;
+  height: 150vh;
+  width: 100%;
+  border: solid 5px green;
+  z-index: -1;
+}
+.Component{
+  /* position: relative; */
+  height: 300vh;
+  width: 100%;
+  border: solid 5px green;
+  z-index: -1;
+}
+.sticky{
+  position: sticky;
+}
