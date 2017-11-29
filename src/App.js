@@ -6,7 +6,7 @@ import Header from './Header'
 import MidContainer from './midContainer.js';
 import Navbar from './navbar.js'
 import router from './router.js'
-
+import Footer from './footer.js'
 class App extends Component {
   render() {
     return (
@@ -15,6 +15,7 @@ class App extends Component {
         <Navbar/>
 
         {router}
+        <Footer/>
         
       </div>
     );

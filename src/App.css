@@ -1,22 +1,27 @@
+html{
+  font-size: 20px;
+  
+  
+}
 body{
-  display: flex;
-  justify-content: center;
-  background: rgb(161, 228, 228);
+  display: block;  
+  background: rgb(0, 0, 0);
   height: 100%;
   
 }
 .App {
-
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  height: 240vh;
+  position: relative;
+  display:block;
 }
 
-
 .Header {
-  
   height: 122px;
-  width: 100vw;
+  width: 100%;
   color: white;
   background: white;
-  position: sticky;
+  /* position: sticky; */
  
   top: 0px;
   display: flex;
@@ -26,14 +31,11 @@ body{
   z-index: 1;
   background-repeat: no-repeat;
   flex-direction: column;
-  
-
-
 }
 .header-h3{
   text-align: right;
   font-weight: 100;
-  font-size: 2vw;
+  font-size: 1em;
   height: 20%;
   margin: 0 60px 15px 0;
 }
@@ -45,22 +47,25 @@ body{
   color: #193495;
   margin: auto 0;
   font-weight: 100;
-  font-size: 3vw;
+  font-size: 1.4em;
+  display: block;
+  max-width: 60%;
   
 }
 .nav{
   top: 122px;
   display: flex;
-  position: sticky;
+  
   justify-content: space-around;
   bottom: 0px;
-  height: 20px;
+  height: 40px;
   width: 100%;
-  background: silver;
+  background: rgb(218, 215, 215);
   box-shadow: 1px 10px 15px #888888;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
   font-weight: bold;
   color: #73b019; /*sirs blue: #193495, sirs green: #73b019*/
+  align-items: center;
 }
 .navLink{
   color: #193495;
@@ -72,36 +77,105 @@ body{
 .MidContainer{
   height:150vh;
   width: 80vw;
-  border: solid 3px gray;
+ 
   box-shadow: 10px 10px 5px #888888;
   padding: 20px;
   background: white;
-  
-  
 }
 .main-left{
   float: left;
-  height: 150vh;
+  height: 100%;
   width: 40%;
   overflow-y: hidden;
   padding: 20px;
-  border: solid 2px red;
+ 
 }
-
 .Home{
   position: relative;
   height: 150vh;
   width: 100%;
-  border: solid 5px green;
+  
   z-index: -1;
 }
 .Component{
-  /* position: relative; */
-  height: 300vh;
-  width: 100%;
-  border: solid 5px green;
+  position: relative;
+  height: calc(100% - 422px);
+  width: 100%;  
   z-index: -1;
 }
 .sticky{
   position: sticky;
+}
+.Footer{  
+  height: 120px;
+  width: 100%;
+  background: #73b019;
+  text-align: center;
+  padding: 22px 0;
+  font-size: .8em;
+  bottom: 0;
+  position: absolute;
+}
+.ham{
+  left:0;
+  height: 40px;
+  width: 40px;
+  background: lightblue;
+  padding: 12px;
+  font-size: 24px;
+  line-height: 2;
+
+  
+
+  
+}
+.close-window{
+  text-align: right;
+  width:100%;
+  position: relative;
+}
+.hamLink{
+  width: 100%;
+  background:white;
+  border: 2px solid gray;
+  padding: 5px;
+}
+.bm-burger-button {
+  position: relative;
+  width: 36px;
+  height: 40px;
+  left: 0px;
+  top: 0px;
+  background-image: url('./img/ham-menu.png');
+  display: none;
+
+}
+
+@media (max-width: 600px){
+  .nav{
+    display:flex;
+    justify-content: flex-start;
+    
+  }
+  .leftCol{
+    position: relative;
+    left: -400px;
+    
+  }
+  .ham{
+    height: 200px;
+  }
+  
+  .navLink{
+    display:none;
+  }
+  .Header{
+    font-size: 14px;
+  }
+  .Component{
+    font-size: 24px;
+  }
+  .bm-burger-button {
+    display: block;
+  }  
 }

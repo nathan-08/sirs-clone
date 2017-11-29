@@ -1,5 +1,4 @@
 import React, {Component} from 'react'
-import logo from './img/SIRSLogo.png'
 
 export default class Header extends Component {
     render(){
@@ -9,10 +8,9 @@ export default class Header extends Component {
             
             
             <div className='header-right'>
-
             AML COMPLIANCE SERVICES FOR
             <br/>
-             NON-BANK FINANCIAL INSTITUTIONS    
+            NON-BANK FINANCIAL INSTITUTIONS    
             </div>
            
             </div>
